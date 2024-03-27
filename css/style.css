@@ -1,0 +1,120 @@
+:root {
+    --font-family: "Inter", sans-serif;
+
+    /* primary color */
+    --primary-green: hsl(75, 94%, 57%);
+    /* 75, 94%, 57%; */
+
+    /* neutral color */
+    --white: hsl(0, 0%, 100%);
+    --gray: hsl(0, 0%, 20%);
+    --gray-50: hsl(0, 0%, 50%);
+    --dark-gray: hsl(0, 0%, 12%);
+    /* --off-black: 0, 0%, 8%; */
+    --off-black: hsl(0, 0%, 8%);
+
+    --font-size: 14px;
+}
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+    color: var(--white);
+    background-color: var(--off-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: var(--dark-gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.name-header {
+    color: var(--white);
+    margin-bottom: 5px;
+}
+
+.location {
+    color: var(--primary-green);
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.description {
+    color: var(--gray-50);
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid yellowgreen; */
+    width: 100%;
+}
+
+.btn-link:link {
+    color: var(--white);
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    transition: all .5s; 
+}
+
+.btn-link:visited {
+    color: var(--white);
+}
+
+.btn-link:hover {
+    background-color: var(--primary-green);
+    color: var(--gray);
+}
+
+.btn-link:active {
+    background-color: var(--primary-green);
+    color: var(--gray);
+}
+
+/* btn design */
+.btn-social {
+    background-color: var(--gray);
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* adjust margin between name-header and location */
+/* lighter gray for description class */
